@@ -42,29 +42,29 @@ public class ProdutoService {
 
     }
 
-public List<ProdutoEntity> findAll() {
-    return new ArrayList<>(PRODUTOS);
-}
+    public List<ProdutoEntity> findAll() {
+        return new ArrayList<>(PRODUTOS);
+    }
 
-public ProdutoEntity createProduct(ProdutoDto produtoDto) {
-    Integer identificador = PRODUTOS.stream()
-            .mapToInt(ProdutoEntity::getId)
-            .max()
-            .orElse(0) + 1;
+    public ProdutoEntity createProduct(ProdutoDto produtoDto) {
+        Integer identificador = PRODUTOS.stream()
+                .mapToInt(ProdutoEntity::getId)
+                .max()
+                .orElse(0) + 1;
 
-    ProdutoEntity novoProduto = ProdutoEntity.builder()
-            .id(identificador)
-            .nome(produtoDto.getNome())
-            .preco(produtoDto.getPreco())
-            .quantidade(produtoDto.getQuantidade())
-            .build();
+        ProdutoEntity novoProduto = ProdutoEntity.builder()
+                .id(identificador)
+                .nome(produtoDto.getNome())
+                .preco(produtoDto.getPreco())
+                .quantidade(produtoDto.getQuantidade())
+                .build();
 
-    PRODUTOS.add (novoProduto);
+        PRODUTOS.add (novoProduto);
 
-    return novoProduto;
-}
+        return novoProduto;
+    }
 
-public ProdutoEntity atualizarProduto(ProdutoDto produtoDto, Integer id) throws NotFoundException {
+    public ProdutoEntity atualizarProduto(ProdutoDto produtoDto, Integer id) throws NotFoundException {
         ProdutoEntity produto = PRODUTOS.stream()
                 .filter(p -> p.getId().equals(id))
                 .findAny()
@@ -75,11 +75,11 @@ public ProdutoEntity atualizarProduto(ProdutoDto produtoDto, Integer id) throws 
         produto.setQuantidade(produtoDto.getQuantidade());
 
         return produto;
-}
+    }
 
-public void removerProduct(Integer id) {
+    public void removerProduct(Integer id) {
         PRODUTOS.removeIf(p -> p.getId().equals(id));
-}
+    }
 
 
 }

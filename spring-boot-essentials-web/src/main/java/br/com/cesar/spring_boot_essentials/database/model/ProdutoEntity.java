@@ -1,4 +1,4 @@
-package br.com.cesar.spring_boot_essentials.dto;
+package br.com.cesar.spring_boot_essentials.database.model;
 
 import lombok.*;
 
@@ -10,8 +10,9 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @ToString
 @Builder
-public class ProdutoDto {
+public class ProdutoEntity {
 
+    private Integer id;
     private String nome;
     private BigDecimal preco;
     private Integer quantidade;
