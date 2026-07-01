@@ -1,5 +1,6 @@
 package br.com.cesar.spring_boot_essentials.dto;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
 @Getter
@@ -9,7 +10,9 @@ import lombok.*;
 @ToString
 @Builder
 public class ExerciciosDto {
+    @NotBlank
     private String nome;
+    @NotBlank
     private String grupoMuscular;
 
 }

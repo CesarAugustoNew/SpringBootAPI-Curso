@@ -3,8 +3,10 @@ package br.com.cesar.spring_boot_essentials.controller;
 import br.com.cesar.spring_boot_essentials.database.model.ExerciciosEntity;
 import br.com.cesar.spring_boot_essentials.dto.ExerciciosDto;
 import br.com.cesar.spring_boot_essentials.service.ExerciciosServices;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,6 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/v1/exercicios")
 @RequiredArgsConstructor
+@Validated
 public class ExerciciosController {
 
     private final ExerciciosServices exerciciosServices;
@@ -24,8 +27,15 @@ public class ExerciciosController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void saveExercicios(@RequestBody ExerciciosDto exerciciosDto){
+    public void saveExercicios(@Valid @RequestBody ExerciciosDto exerciciosDto){
         exerciciosServices.save(exerciciosDto);
     }
 
+    @GetMapping("/grupos/{grupoMuscular}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<ExerciciosEntity> getExerciciosByGrupoMuscular(@PathVariable String grupoMuscular){
+        return  exerciciosServices.getExerciciosByGrupoMuscular(grupoMuscular);
+    }
+
 }
+
