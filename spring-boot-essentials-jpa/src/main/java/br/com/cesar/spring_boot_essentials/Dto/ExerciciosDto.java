@@ -1,4 +1,4 @@
-package br.com.cesar.spring_boot_essentials.dto;
+package br.com.cesar.spring_boot_essentials.Dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
@@ -9,10 +9,10 @@ import lombok.*;
 @NoArgsConstructor
 @ToString
 @Builder
-public class AlunoDto {
-
+public class ExerciciosDto {
     @NotBlank
     private String nome;
     @NotBlank
-    private String email;
+    private String grupoMuscular;
+
 }

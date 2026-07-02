@@ -1,9 +1,9 @@
-package br.com.cesar.spring_boot_essentials.controller;
+package br.com.cesar.spring_boot_essentials.Controller;
 
-import br.com.cesar.spring_boot_essentials.dto.AvaliacaoFisicaDto;
-import br.com.cesar.spring_boot_essentials.exception.BadRequestException;
-import br.com.cesar.spring_boot_essentials.exception.NotFoundException;
-import br.com.cesar.spring_boot_essentials.service.AvaliacaoFisicaService;
+import br.com.cesar.spring_boot_essentials.Dto.AvaliacaoFisicaDto;
+import br.com.cesar.spring_boot_essentials.Exception.BadRequestException;
+import br.com.cesar.spring_boot_essentials.Exception.NotFoundException;
+import br.com.cesar.spring_boot_essentials.Service.AvaliacaoFisicaService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

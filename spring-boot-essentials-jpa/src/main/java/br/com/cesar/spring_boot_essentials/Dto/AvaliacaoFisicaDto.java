@@ -1,4 +1,4 @@
-package br.com.cesar.spring_boot_essentials.dto;
+package br.com.cesar.spring_boot_essentials.Dto;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;

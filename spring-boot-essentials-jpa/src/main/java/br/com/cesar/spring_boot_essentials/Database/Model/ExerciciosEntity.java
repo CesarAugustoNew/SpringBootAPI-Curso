@@ -1,4 +1,4 @@
-package br.com.cesar.spring_boot_essentials.database.model;
+package br.com.cesar.spring_boot_essentials.Database.Model;
 
 
 import jakarta.persistence.*;

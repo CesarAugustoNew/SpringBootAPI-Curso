@@ -1,8 +1,8 @@
-package br.com.cesar.spring_boot_essentials.controller;
+package br.com.cesar.spring_boot_essentials.Controller;
 
-import br.com.cesar.spring_boot_essentials.dto.AlunoDto;
-import br.com.cesar.spring_boot_essentials.exception.BadRequestException;
-import br.com.cesar.spring_boot_essentials.service.AlunosService;
+import br.com.cesar.spring_boot_essentials.Dto.AlunoDto;
+import br.com.cesar.spring_boot_essentials.Exception.BadRequestException;
+import br.com.cesar.spring_boot_essentials.Service.AlunosService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

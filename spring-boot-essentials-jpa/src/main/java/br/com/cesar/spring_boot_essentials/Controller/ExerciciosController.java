@@ -1,8 +1,8 @@
-package br.com.cesar.spring_boot_essentials.controller;
+package br.com.cesar.spring_boot_essentials.Controller;
 
-import br.com.cesar.spring_boot_essentials.database.model.ExerciciosEntity;
-import br.com.cesar.spring_boot_essentials.dto.ExerciciosDto;
-import br.com.cesar.spring_boot_essentials.service.ExerciciosServices;
+import br.com.cesar.spring_boot_essentials.Database.Model.ExerciciosEntity;
+import br.com.cesar.spring_boot_essentials.Dto.ExerciciosDto;
+import br.com.cesar.spring_boot_essentials.Service.ExerciciosServices;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

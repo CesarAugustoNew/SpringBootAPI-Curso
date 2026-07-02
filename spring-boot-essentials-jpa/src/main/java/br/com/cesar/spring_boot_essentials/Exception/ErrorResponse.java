@@ -1,4 +1,4 @@
-package br.com.cesar.spring_boot_essentials.exception;
+package br.com.cesar.spring_boot_essentials.Exception;
 
 import lombok.*;
 

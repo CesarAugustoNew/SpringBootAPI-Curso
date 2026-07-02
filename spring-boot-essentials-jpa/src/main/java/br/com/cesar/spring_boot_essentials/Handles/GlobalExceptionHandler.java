@@ -1,8 +1,8 @@
-package br.com.cesar.spring_boot_essentials.handles;
+package br.com.cesar.spring_boot_essentials.Handles;
 
-import br.com.cesar.spring_boot_essentials.exception.BadRequestException;
-import br.com.cesar.spring_boot_essentials.exception.ErrorResponse;
-import br.com.cesar.spring_boot_essentials.exception.NotFoundException;
+import br.com.cesar.spring_boot_essentials.Exception.BadRequestException;
+import br.com.cesar.spring_boot_essentials.Exception.ErrorResponse;
+import br.com.cesar.spring_boot_essentials.Exception.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

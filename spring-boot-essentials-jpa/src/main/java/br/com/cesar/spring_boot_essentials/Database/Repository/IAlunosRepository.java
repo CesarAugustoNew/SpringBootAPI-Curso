@@ -1,6 +1,6 @@
-package br.com.cesar.spring_boot_essentials.database.repository;
+package br.com.cesar.spring_boot_essentials.Database.Repository;
 
-import br.com.cesar.spring_boot_essentials.database.model.AlunosEntity;
+import br.com.cesar.spring_boot_essentials.Database.Model.AlunosEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

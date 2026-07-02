@@ -1,10 +1,10 @@
-package br.com.cesar.spring_boot_essentials.service;
+package br.com.cesar.spring_boot_essentials.Service;
 
 
-import br.com.cesar.spring_boot_essentials.database.model.AlunosEntity;
-import br.com.cesar.spring_boot_essentials.database.repository.IAlunosRepository;
-import br.com.cesar.spring_boot_essentials.dto.AlunoDto;
-import br.com.cesar.spring_boot_essentials.exception.BadRequestException;
+import br.com.cesar.spring_boot_essentials.Database.Model.AlunosEntity;
+import br.com.cesar.spring_boot_essentials.Database.Repository.IAlunosRepository;
+import br.com.cesar.spring_boot_essentials.Dto.AlunoDto;
+import br.com.cesar.spring_boot_essentials.Exception.BadRequestException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

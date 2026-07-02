@@ -1,9 +1,9 @@
-package br.com.cesar.spring_boot_essentials.service;
+package br.com.cesar.spring_boot_essentials.Service;
 
 
-import br.com.cesar.spring_boot_essentials.database.model.ExerciciosEntity;
-import br.com.cesar.spring_boot_essentials.database.repository.IExerciciosRepository;
-import br.com.cesar.spring_boot_essentials.dto.ExerciciosDto;
+import br.com.cesar.spring_boot_essentials.Database.Model.ExerciciosEntity;
+import br.com.cesar.spring_boot_essentials.Database.Repository.IExerciciosRepository;
+import br.com.cesar.spring_boot_essentials.Dto.ExerciciosDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
