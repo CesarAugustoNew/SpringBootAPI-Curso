@@ -11,6 +11,7 @@ import br.com.cesar.spring_boot_essentials.Dto.AlunoDto;
 import br.com.cesar.spring_boot_essentials.Dto.AvaliacaoFisicaDto;
 import br.com.cesar.spring_boot_essentials.Exception.BadRequestException;
 import br.com.cesar.spring_boot_essentials.Exception.NotFoundException;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -50,6 +51,8 @@ public class AlunosService {
         return avaliacao;
     }
 
+
+    @Transactional
     public void deletarAluno (Integer alunosId) throws NotFoundException{
 
         AlunosEntity aluno = alunosRepository.findById(alunosId)
@@ -64,6 +67,8 @@ public class AlunosService {
         alunosRepository.deleteById(alunosId);
 
         avaliacoesFisicasRepository.deleteById(aluno.getAvaliacoesFisicas().getId());
+
+
     }
 
 }
